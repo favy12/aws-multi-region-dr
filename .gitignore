@@ -1,0 +1,30 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+
+# Variable files often carry account IDs, CIDRs and zone IDs.
+# Commit *.auto.tfvars.example instead.
+*.tfvars
+!*.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Credentials
+.env
+*.pem
+*.key
+credentials
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
